@@ -422,32 +422,64 @@ body {
         justify-content: space-between;
         padding: 40px 10px;
         .footer-left {
+            flex-basis: 50%;
             color: #fff;
             ul {
                 li {
                     span {
                         font-size: 24px;
                         padding-right: 10px;
+                        font-weight: bold;
                     } // span
                     div {
                         border: 1px solid #000;
                         font-style: normal;
-                        font-size: 14px;
+                        font-size: 12px;
                         padding: 10px;
                         display: inline-block;
+                        cursor: pointer;
+                        margin: 10px;
+                        margin-left: 0;
+                        border-radius: 5px;
                     } // div
+                    div:hover {
+                        background-color: rgba(0, 0, 0, 0.5);
+                    } // div:hover
                 } // li
+                li:nth-of-type(3), li:nth-of-type(4) {
+                    font-size: 12px;
+                }
             } // ul
         } // .footer-left
         .footer-right {
             color: #fff;
-            ul:nth-of-type(1) {
+            flex-basis: 50%;
+            ul {
                 display: flex;
+                font-size: 14px;
+                li {
+                    padding-right: 20px;
+                } // li
+            } // ul
+            ul:nth-of-type(1) {
                 justify-content: space-between;
-                a {
-                    color: #fff;
-                } // a
+                padding-bottom: 30px;
+                > li {
+                    a {
+                        color: #fff;
+                    } // a
+                } // > li
             } // ul:nth-of-type(1)
+            ul:nth-last-of-type(1) {
+                padding-top: 30px;
+                li {
+                    a {
+                        img {
+                            width: 15%;
+                        } // img
+                    } // a
+                } // li
+            } // ul:nth-last-of-type(1)
         } // .footer-right
     } // .footer-wrap
 } // .footer
