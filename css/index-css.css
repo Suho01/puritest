@@ -1,0 +1,120 @@
+@import url("//fonts.googleapis.com/earlyaccess/notosanskr.css");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR";
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav {
+  background-color: #fff;
+}
+.nav .nav-wrap {
+  max-width: 1200px;
+  height: 120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .nav-wrap .logo {
+  flex-basis: 10%;
+}
+.nav .nav-wrap .navlist {
+  flex-basis: 60%;
+}
+.nav .nav-wrap .navlist ul {
+  display: flex;
+  justify-content: space-around;
+}
+.nav .nav-wrap .navlist ul > li {
+  flex-basis: 100%;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.5s;
+  position: relative;
+}
+.nav .nav-wrap .navlist ul > li:hover a {
+  font-weight: bold;
+}
+.nav .nav-wrap .navlist ul > li::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #162c58;
+  position: absolute;
+  left: 0;
+  bottom: -23px;
+  transition: 0.5s;
+}
+.nav .nav-wrap .navlist ul > li:hover::after {
+  width: 100%;
+}
+.nav .nav-wrap .glo-dark {
+  flex-basis: 10%;
+}
+.nav .nav-wrap .glo-dark ul {
+  display: flex;
+}
+.nav .nav-wrap .glo-dark ul li img {
+  width: 30%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper .swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper .swiper-wrapper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+:root {
+  --swiper-theme-color: #fff;
+}
+
+.swiper-button-next {
+  right: 360px;
+}
+
+.swiper-button-prev {
+  left: 360px;
+}
+
+.content1 {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 140px;
+}
+.content1 .content1-left {
+  text-align: center;
+}
+.content1 .content1-left p {
+  margin-top: 20px;
+}
+.content1 .content1-right img {
+  border-radius: 40px;
+}/*# sourceMappingURL=index-css.css.map */
